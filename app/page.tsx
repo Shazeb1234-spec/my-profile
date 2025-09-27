@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <div className="flex flex-1 flex-col p-7 gap-5">
       <Label>Shazeb Arafin</Label>
-      <Card className="w-full shadow-2xl shadow-purple-800  bg-indigo-400 border-t-blue-700 border-b-blue-700   border-l-blue-300 
-       border-r-blue-300 border-8">
+      <Card className="w-full shadow-2xl shadow-purple-800  bg-indigo-400 border-t-purple-700 border-b-purple-700   border-l-purple-300 
+       border-r-purple-300 border-8">
         <CardHeader>
           <CardTitle>About Me</CardTitle>
           {/* <CardDescription>
@@ -20,14 +20,13 @@ export default function Home() {
         </CardHeader>
         <CardContent>
 
-          <Image src={"/boy.jpg"} alt="boy" width={300} height={500} />
+          <Image src={"/boy.jpeg"} alt="boy" width={300} height={500} />
           <p>
             Hello my name is Shazeb... uhhh
             I am 11 years old :D and I am in year 6 and uhmm
             uhmm I don't know what to say uhmm I am from Bangledesh.
             I love coding and swiming. I use VSCODE and Roblox studios for coding and yeah thats It.
             uhh love eating pizza uhhmm I love Science and sometimes math.
-            I don't know why I am holding a camera and this is not how I look, I am way taller..
           </p>
         </CardContent>
         <CardFooter className="flex-col gap-2">
@@ -60,8 +59,8 @@ export default function Home() {
       </Card>
 
       {/* Gallery section */}
-      <Card className="w-full shadow-2xl shadow-yellow-300  bg-orange-200 border-t-orange-600 border-b-orange-600  border-l-orange-400
-       border-r-orange-400 border-8">
+      <Card className="w-full shadow-2xl shadow-blue-300  bg-blue-200 border-t-blue-600 border-b-blue-600  border-l-blue-400
+       border-r-blue-400 border-8">
         <CardHeader>
           <CardTitle>Gallery</CardTitle>
           {/* <CardDescription>
@@ -69,8 +68,16 @@ export default function Home() {
         </CardDescription> */}
         </CardHeader>
         <CardContent>
-
-          <Image src={"/city.jpg"} alt="city" width={500} height={500} />
+            <div className="grid gird-cols-3 grid-rows-3 gap-4">
+              <div className="bg-amber-300">
+                <div className="bg-red-500">1</div>
+                <div className="bg-red-500">2</div>
+                <div className="bg-red-500">3</div>
+              </div>
+              <div className="bg-amber-300">2</div>
+              <div className="bg-amber-300">3</div>
+            </div>
+          {/* <Image src={"/city.jpg"} alt="city" width={500} height={500} /> */}
           <p>
             Dubai, located in the country of UAE(United  arab emirates)
             has the most famous sights like the burj Khalifa, and  Dubai[a]
