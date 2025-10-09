@@ -35,39 +35,39 @@ import {
 
 const data = {
   user: {
-    name: "shadcn",
-    email: "m@example.com",
-    avatar: "/avatars/shadcn.jpg",
+    name: "Shazeb :D",
+    email: "shazeb.arafin@gmail.com",
+    avatar: "/Gall2.jpg",
   },
   navMain: [
     {
        title: "About me",
-      url: "#",
+      url: "#about-me",
       icon: IconDashboard,
     },
     {
       title: "My City",
-      url: "#",
+      url: "#my-city",
       icon: IconListDetails,
     },
     {
       title: "Gallery",
-      url: "#",
+      url: "#gallery",
       icon: IconChartBar,
     },
     {
       title: "My Favourite Sports",
-      url: "#",
+      url: "#my-favourite-sports",
       icon: IconFolder,
     },
     {
       title: "My Favourite book",
-      url: "#",
+      url: "#my-favourite-book",
       icon: IconUsers,
     },
     {
       title: "My Message",
-      url: "#",
+      url: "#my-message",
       icon: IconUsers,
     },
   ],

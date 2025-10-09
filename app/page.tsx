@@ -2,9 +2,9 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { ItemContent, ItemDescription, ItemHeader, ItemTitle } from "@/components/ui/item";
+import { Item, ItemContent, ItemDescription, ItemHeader, ItemTitle } from "@/components/ui/item";
 import { Label } from "@/components/ui/label";
-import { Item } from "@radix-ui/react-toggle-group";
+
 import { Clicker_Script } from "next/font/google";
 import Image from "next/image";
 
@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="flex flex-1 flex-col p-7 gap-5">
       <Label>Shazeb Arafin</Label>
-      <Card className="w-full shadow-2xl shadow-purple-800  bg-indigo-400 border-t-purple-700 border-b-purple-700   border-l-purple-300 
+      <Card id="about-me" className="w-full shadow-2xl shadow-purple-800  bg-indigo-400 border-t-purple-700 border-b-purple-700   border-l-purple-300 
        border-r-purple-300 border-8">
         <CardHeader>
           <CardTitle>About Me</CardTitle>
@@ -36,7 +36,7 @@ export default function Home() {
       </Card>
 
       {/* My City section */}
-      <Card className="w-full shadow-2xl shadow-yellow-300  bg-orange-200 border-t-orange-600 border-b-orange-600  border-l-orange-400
+      <Card id="my-city" className="w-full shadow-2xl shadow-yellow-300  bg-orange-200 border-t-orange-600 border-b-orange-600  border-l-orange-400
        border-r-orange-400 border-8">
         <CardHeader>
           <CardTitle className="font-extrabold">My City</CardTitle>
@@ -61,7 +61,7 @@ export default function Home() {
       </Card>
 
       {/* Gallery section */}
-      <Card className="w-full shadow-2xl shadow-blue-300  bg-blue-200 border-t-blue-600 border-b-blue-600  border-l-blue-400
+      <Card id="gallery" className="w-full shadow-2xl shadow-blue-300  bg-blue-200 border-t-blue-600 border-b-blue-600  border-l-blue-400
        border-r-blue-400 border-8">
         <CardHeader>
           <CardTitle>Gallery</CardTitle>
@@ -105,7 +105,7 @@ export default function Home() {
       </Card>
 
       {/* Gallery section */}
-      <Card className="w-full shadow-2xl shadow-green-950 bg-white border-t-green-950 border-b-green-950 border-l-green-900
+      <Card id="my-favourite-book"className="w-full shadow-2xl shadow-green-950 bg-white border-t-green-950 border-b-green-950 border-l-green-900
        border-r-green-900 border-8">
         <CardHeader>
           <CardTitle>My favourite Books</CardTitle>
@@ -132,7 +132,7 @@ export default function Home() {
       </Card>
 
       {/* Gallery section */}
-      <Card className="w-full shadow-2xl shadow-green-950 bg-white border-t-green-950 border-b-green-950 border-l-green-900
+      <Card id="my-favourite-sports" className="w-full shadow-2xl shadow-green-950 bg-white border-t-green-950 border-b-green-950 border-l-green-900
        border-r-green-900 border-8">
         <CardHeader>
           <CardTitle>My favourite Sports</CardTitle>
@@ -144,7 +144,7 @@ export default function Home() {
           <div className="grid grid-flow-col grid-cols-3">
             <div className="bg-green-300">
               <Image className=" aspect-6/5 object-contain w-full shadow-2xl bg-green-200 border-t-green-400 border-b-green-400  border-l-green-600 border-r-green-600 border-8" src={"/BasBall.jpg"} alt="BassBall" width={500} height={500} />
-              
+
             </div>
             <div className="bg-green-600">
               <Image className="aspect-6/5 object-contain w-full shadow-2xl bg-green-200 border-t-green-600 border-b-green-600  border-l-green-400 border-r-green-400 border-8" src={"/VollBall.jpg"} alt="VollBall" width={500} height={500} />
@@ -153,12 +153,101 @@ export default function Home() {
               <Image className="aspect-6/5 object-contain w-full shadow-2xl bg-green-200 border-t-green-400 border-b-green-400  border-l-green-600 border-r-green-600 border-8" src={"/Swim.jpg"} alt="Swim" width={300} height={300} />
             </div>
           </div>
-          
+
+          <ol className="list-decimal">
+            <li>
+              <Item>
+                <ItemHeader className="h-2 font-bold">
+                  Basketball
+                </ItemHeader>
+                <ItemContent>
+                  <ItemTitle>
+                    Likes
+                  </ItemTitle>
+                  <ul className="list-disc">
+                    <li>
+                      Basketball makes you taller
+                    </li>
+                    <li>
+                      It requires lots of energy
+                    </li>
+                    <li>
+                      It makes you fit
+                    </li>
+                    <li>
+                      It's famous
+                    </li>
+                  </ul>
+                </ItemContent>
+              </Item>
+            </li>
+
+            <li>
+              <Item>
+                <ItemHeader className="h-2 font-bold">
+                  Swimming
+                </ItemHeader>
+                <ItemContent>
+                  <ItemTitle>
+                    Likes
+                  </ItemTitle>
+                  <ul className="list-disc">
+                    <li>
+                      Swimming makes you taller
+                    </li>
+                    <li>
+                      It requires lots of energy
+                    </li>
+                    <li>
+                      It makes you fit
+                    </li>
+                    <li>
+                      It's very competitive
+                    </li>
+                  </ul>
+                </ItemContent>
+              </Item>
+            </li>
+
+            <li>
+              <Item>
+                <ItemHeader className="h-2 font-bold">
+                  Volley Ball
+                </ItemHeader>
+                <ItemContent>
+                  <ItemTitle>
+                    Likes
+                  </ItemTitle>
+                  <ul className="list-disc">
+                    <li>
+                      Volley Ball makes you taller
+                    </li>
+                    <li>
+                      It requires lots of energy
+                    </li>
+                    <li>
+                      It makes you fit
+                    </li>
+                    <li>
+                      It's very competitive
+                    </li>
+                  </ul>
+                </ItemContent>
+              </Item>
+            </li>
+          </ol>
+
+
+
+
+
+
 
         </CardContent>
         <CardFooter>
         </CardFooter>
       </Card>
+
     </div>
 
 
