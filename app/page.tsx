@@ -1,11 +1,8 @@
 'use client'
-import { Button } from "@/components/ui/button";
-import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Item, ItemContent, ItemDescription, ItemHeader, ItemTitle } from "@/components/ui/item";
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Item, ItemContent, ItemHeader, ItemTitle } from "@/components/ui/item";
 import { Label } from "@/components/ui/label";
 
-import { Clicker_Script } from "next/font/google";
 import Image from "next/image";
 
 export default function Home() {
@@ -26,7 +23,7 @@ export default function Home() {
           <p>
             Hello my name is Shazeb... uhhh
             I am 11 years old :D and I am in year 6 and uhmm
-            uhmm I don't know what to say uhmm I am from Bangledesh.
+            uhmm I do not know what to say uhmm I am from Bangledesh.
             I love coding and swiming. I use VSCODE and Roblox studios for coding and yeah thats It.
             uhh love eating pizza uhhmm I love Science and sometimes math.
           </p>
@@ -154,8 +151,8 @@ export default function Home() {
             </div>
           </div>
 
-          <ol className="list-decimal">
-            <li>
+          <ol className=" list-decimal list-inside">
+            <li className="p-3 rounded-3xl shadow-2xl shadow-emerald-900 ">
               <Item>
                 <ItemHeader className="h-2 font-bold">
                   Basketball
@@ -164,7 +161,7 @@ export default function Home() {
                   <ItemTitle>
                     Likes
                   </ItemTitle>
-                  <ul className="list-disc">
+                  <ul className="list-disc list-inside">
                     <li>
                       Basketball makes you taller
                     </li>
@@ -175,14 +172,14 @@ export default function Home() {
                       It makes you fit
                     </li>
                     <li>
-                      It's famous
+                      Its famous
                     </li>
                   </ul>
                 </ItemContent>
               </Item>
             </li>
 
-            <li>
+            <li className="p-3 rounded-3xl shadow-2xl shadow-emerald-900">
               <Item>
                 <ItemHeader className="h-2 font-bold">
                   Swimming
@@ -191,7 +188,7 @@ export default function Home() {
                   <ItemTitle>
                     Likes
                   </ItemTitle>
-                  <ul className="list-disc">
+                  <ul className="list-disc list-inside">
                     <li>
                       Swimming makes you taller
                     </li>
@@ -202,14 +199,14 @@ export default function Home() {
                       It makes you fit
                     </li>
                     <li>
-                      It's very competitive
+                      Its very competitive
                     </li>
                   </ul>
                 </ItemContent>
               </Item>
             </li>
 
-            <li>
+            <li className="p-3 rounded-3xl shadow-2xl shadow-emerald-900 ">
               <Item>
                 <ItemHeader className="h-2 font-bold">
                   Volley Ball
@@ -218,7 +215,7 @@ export default function Home() {
                   <ItemTitle>
                     Likes
                   </ItemTitle>
-                  <ul className="list-disc">
+                  <ul className="list-disc list-inside">
                     <li>
                       Volley Ball makes you taller
                     </li>
@@ -229,19 +226,13 @@ export default function Home() {
                       It makes you fit
                     </li>
                     <li>
-                      It's very competitive
+                      Its very competitive
                     </li>
                   </ul>
                 </ItemContent>
               </Item>
             </li>
           </ol>
-
-
-
-
-
-
 
         </CardContent>
         <CardFooter>
