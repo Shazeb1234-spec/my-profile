@@ -24,7 +24,7 @@ export default function Home() {
             Hello my name is Shazeb... uhhh
             I am 11 years old :D and I am in year 6 and uhmm
             uhmm I do not know what to say uhmm I am from Bangledesh.
-            I love coding and swiming. I use VSCODE and Roblox studios for coding and yeah thats It.
+            I love coding and swimming. I use VSCODE and Roblox studios for coding and yeah thats It.
             uhh love eating pizza uhhmm I love Science and sometimes math.
           </p>
         </CardContent>
@@ -236,6 +236,29 @@ export default function Home() {
 
         </CardContent>
         <CardFooter>
+        </CardFooter>
+      </Card>
+
+        <Card id="my-message" className="w-full shadow-2xl shadow-yellow-300  bg-orange-200 border-t-orange-600 border-b-orange-600  border-l-orange-400
+       border-r-orange-400 border-8">
+        <CardHeader>
+          <CardTitle className="font-extrabold">My City</CardTitle>
+          {/* <CardDescription>
+          Enter your email below to login to your account
+        </CardDescription> */}
+        </CardHeader>
+        <CardContent>
+
+          <Image className="w-full shadow-2xl bg-orange-200 border-t-orange-400 border-b-orange-400  border-l-orange-600
+       border-r-orange-600 border-8" src={"/city.jpg"} alt="city" width={500} height={500} />
+          <p>
+          Every small act of kindness you perform creates ripples that extend far beyond what you can see. A simple smile, a helping hand, or a kind word can brighten someone's day, inspire them to pass it forward, and ultimately make the world a better place. Choose kindness—it costs nothing but means everything.
+          </p>
+              <blockquote className="mt-6 border-l-2 pl-6 italic">
+         &quot;Be kind, for everyone you meet is fighting a hard battle&quot; Ian MacLaren 
+                </blockquote>
+        </CardContent>
+        <CardFooter className="flex-col gap-2">
         </CardFooter>
       </Card>
 
